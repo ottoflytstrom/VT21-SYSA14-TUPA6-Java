@@ -16,8 +16,9 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
     static org.apache.axis.description.OperationDesc [] _operations;
 
     static {
-        _operations = new org.apache.axis.description.OperationDesc[10];
+        _operations = new org.apache.axis.description.OperationDesc[11];
         _initOperationDesc1();
+        _initOperationDesc2();
     }
 
     private static void _initOperationDesc1(){
@@ -39,102 +40,116 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://tempuri.org/", "tableName"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         param.setOmittable(true);
         oper.addParameter(param);
-        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType"));
-        oper.setReturnClass(java.lang.Object[][].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString"));
+        oper.setReturnClass(java.lang.String[][].class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "GetContentFromTableResult"));
         param = oper.getReturnParamDesc();
-        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType"));
+        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[1] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("InformationAboutRelatives");
-        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType"));
-        oper.setReturnClass(java.lang.Object[][].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString"));
+        oper.setReturnClass(java.lang.String[][].class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "InformationAboutRelativesResult"));
         param = oper.getReturnParamDesc();
-        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType"));
+        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[2] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("FindSickEmployeesFrom2004");
-        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType"));
-        oper.setReturnClass(java.lang.Object[][].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString"));
+        oper.setReturnClass(java.lang.String[][].class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "FindSickEmployeesFrom2004Result"));
         param = oper.getReturnParamDesc();
-        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType"));
+        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[3] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("FindMostAbsentEmployee");
-        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType"));
-        oper.setReturnClass(java.lang.Object[][].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        oper.setReturnClass(java.lang.String.class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "FindMostAbsentEmployeeResult"));
-        param = oper.getReturnParamDesc();
-        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[4] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("GetAllTables");
-        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType"));
-        oper.setReturnClass(java.lang.Object[][].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString"));
+        oper.setReturnClass(java.lang.String[][].class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "GetAllTablesResult"));
         param = oper.getReturnParamDesc();
-        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType"));
+        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[5] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("GetAllKeys");
-        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType"));
-        oper.setReturnClass(java.lang.Object[][].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString"));
+        oper.setReturnClass(java.lang.String[][].class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "GetAllKeysResult"));
         param = oper.getReturnParamDesc();
-        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType"));
+        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[6] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("GetAllIndexes");
-        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType"));
-        oper.setReturnClass(java.lang.Object[][].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString"));
+        oper.setReturnClass(java.lang.String[][].class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "GetAllIndexesResult"));
         param = oper.getReturnParamDesc();
-        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType"));
+        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[7] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("GetAllConstraints");
-        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType"));
-        oper.setReturnClass(java.lang.Object[][].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString"));
+        oper.setReturnClass(java.lang.String[][].class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "GetAllConstraintsResult"));
         param = oper.getReturnParamDesc();
-        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType"));
+        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[8] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("GetAllEmployeeColumns");
-        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType"));
-        oper.setReturnClass(java.lang.Object[][].class);
+        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString"));
+        oper.setReturnClass(java.lang.String[][].class);
         oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "GetAllEmployeeColumnsResult"));
         param = oper.getReturnParamDesc();
-        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType"));
+        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
         oper.setUse(org.apache.axis.constants.Use.LITERAL);
         _operations[9] = oper;
+
+    }
+
+    private static void _initOperationDesc2(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("GetNamesOfEmployeeTables");
+        oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
+        oper.setReturnClass(java.lang.String[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "GetNamesOfEmployeeTablesResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "string"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[10] = oper;
 
     }
 
@@ -167,164 +182,6 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
             java.lang.Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
             java.lang.Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
             java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">FindMostAbsentEmployee");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.FindMostAbsentEmployee.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">FindMostAbsentEmployeeResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.FindMostAbsentEmployeeResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">FindSickEmployeesFrom2004");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.FindSickEmployeesFrom2004.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">FindSickEmployeesFrom2004Response");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.FindSickEmployeesFrom2004Response.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllConstraints");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllConstraints.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllConstraintsResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllConstraintsResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllEmployeeColumns");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllEmployeeColumns.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllEmployeeColumnsResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllEmployeeColumnsResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllIndexes");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllIndexes.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllIndexesResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllIndexesResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllKeys");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllKeys.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllKeysResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllKeysResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllTables");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllTables.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetAllTablesResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetAllTablesResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetContentFromTable");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetContentFromTable.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetContentFromTableResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetContentFromTableResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetEmployeeMetaData");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetEmployeeMetaData.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">GetEmployeeMetaDataResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.GetEmployeeMetaDataResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">InformationAboutRelatives");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.InformationAboutRelatives.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">InformationAboutRelativesResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.InformationAboutRelativesResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType");
-            cachedSerQNames.add(qName);
-            cls = java.lang.Object[].class;
-            cachedSerClasses.add(cls);
-            qName = new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "anyType");
-            qName2 = new javax.xml.namespace.QName("http://tempuri.org/", "anyType");
-            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
-            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfAnyType");
-            cachedSerQNames.add(qName);
-            cls = java.lang.Object[][].class;
-            cachedSerClasses.add(cls);
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType");
-            qName2 = new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfAnyType");
-            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
-            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
-
             qName = new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString");
             cachedSerQNames.add(qName);
             cls = java.lang.String[][].class;
@@ -443,7 +300,7 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.Object[][] getContentFromTable(java.lang.String tableName) throws java.rmi.RemoteException {
+    public java.lang.String[][] getContentFromTable(java.lang.String tableName) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -467,9 +324,9 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         else {
             extractAttachments(_call);
             try {
-                return (java.lang.Object[][]) _resp;
+                return (java.lang.String[][]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (java.lang.Object[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.Object[][].class);
+                return (java.lang.String[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String[][].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -477,7 +334,7 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.Object[][] informationAboutRelatives() throws java.rmi.RemoteException {
+    public java.lang.String[][] informationAboutRelatives() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -501,9 +358,9 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         else {
             extractAttachments(_call);
             try {
-                return (java.lang.Object[][]) _resp;
+                return (java.lang.String[][]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (java.lang.Object[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.Object[][].class);
+                return (java.lang.String[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String[][].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -511,7 +368,7 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.Object[][] findSickEmployeesFrom2004() throws java.rmi.RemoteException {
+    public java.lang.String[][] findSickEmployeesFrom2004() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -535,9 +392,9 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         else {
             extractAttachments(_call);
             try {
-                return (java.lang.Object[][]) _resp;
+                return (java.lang.String[][]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (java.lang.Object[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.Object[][].class);
+                return (java.lang.String[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String[][].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -545,7 +402,7 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.Object[][] findMostAbsentEmployee() throws java.rmi.RemoteException {
+    public java.lang.String findMostAbsentEmployee() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -569,9 +426,9 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         else {
             extractAttachments(_call);
             try {
-                return (java.lang.Object[][]) _resp;
+                return (java.lang.String) _resp;
             } catch (java.lang.Exception _exception) {
-                return (java.lang.Object[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.Object[][].class);
+                return (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -579,7 +436,7 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.Object[][] getAllTables() throws java.rmi.RemoteException {
+    public java.lang.String[][] getAllTables() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -603,9 +460,9 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         else {
             extractAttachments(_call);
             try {
-                return (java.lang.Object[][]) _resp;
+                return (java.lang.String[][]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (java.lang.Object[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.Object[][].class);
+                return (java.lang.String[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String[][].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -613,7 +470,7 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.Object[][] getAllKeys() throws java.rmi.RemoteException {
+    public java.lang.String[][] getAllKeys() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -637,9 +494,9 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         else {
             extractAttachments(_call);
             try {
-                return (java.lang.Object[][]) _resp;
+                return (java.lang.String[][]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (java.lang.Object[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.Object[][].class);
+                return (java.lang.String[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String[][].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -647,7 +504,7 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.Object[][] getAllIndexes() throws java.rmi.RemoteException {
+    public java.lang.String[][] getAllIndexes() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -671,9 +528,9 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         else {
             extractAttachments(_call);
             try {
-                return (java.lang.Object[][]) _resp;
+                return (java.lang.String[][]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (java.lang.Object[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.Object[][].class);
+                return (java.lang.String[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String[][].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -681,7 +538,7 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.Object[][] getAllConstraints() throws java.rmi.RemoteException {
+    public java.lang.String[][] getAllConstraints() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -705,9 +562,9 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         else {
             extractAttachments(_call);
             try {
-                return (java.lang.Object[][]) _resp;
+                return (java.lang.String[][]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (java.lang.Object[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.Object[][].class);
+                return (java.lang.String[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String[][].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -715,7 +572,7 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.Object[][] getAllEmployeeColumns() throws java.rmi.RemoteException {
+    public java.lang.String[][] getAllEmployeeColumns() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -739,9 +596,43 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         else {
             extractAttachments(_call);
             try {
-                return (java.lang.Object[][]) _resp;
+                return (java.lang.String[][]) _resp;
             } catch (java.lang.Exception _exception) {
-                return (java.lang.Object[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.Object[][].class);
+                return (java.lang.String[][]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String[][].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public java.lang.String[] getNamesOfEmployeeTables() throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[10]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://tempuri.org/GetNamesOfEmployeeTables");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://tempuri.org/", "GetNamesOfEmployeeTables"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (java.lang.String[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (java.lang.String[]) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {

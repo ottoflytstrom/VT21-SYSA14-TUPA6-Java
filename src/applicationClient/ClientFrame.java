@@ -11,6 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JComboBox;
+import java.awt.event.ItemListener;
+import java.awt.event.ItemEvent;
 
 public class ClientFrame extends JFrame {
 
@@ -154,13 +156,16 @@ public class ClientFrame extends JFrame {
 		panel_4.setLayout(null);
 		
 		JScrollPane scrollPane_5 = new JScrollPane();
-		scrollPane_5.setBounds(10, 32, 524, 191);
+		scrollPane_5.setBounds(10, 32, 524, 160);
 		panel_4.add(scrollPane_5);
 		
 		tableContents = new JTable();
+		tableContents.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+
 		scrollPane_5.setViewportView(tableContents);
 		
 		comboBoxTableName = new JComboBox<String>();
+		
 		comboBoxTableName.setBounds(285, 5, 249, 22);
 		panel_4.add(comboBoxTableName);
 		

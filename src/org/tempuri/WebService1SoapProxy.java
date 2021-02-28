@@ -50,58 +50,64 @@ public class WebService1SoapProxy implements org.tempuri.WebService1Soap {
     return webService1Soap.getEmployeeMetaData();
   }
   
-  public java.lang.Object[][] getContentFromTable(java.lang.String tableName) throws java.rmi.RemoteException{
+  public java.lang.String[][] getContentFromTable(java.lang.String tableName) throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
     return webService1Soap.getContentFromTable(tableName);
   }
   
-  public java.lang.Object[][] informationAboutRelatives() throws java.rmi.RemoteException{
+  public java.lang.String[][] informationAboutRelatives() throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
     return webService1Soap.informationAboutRelatives();
   }
   
-  public java.lang.Object[][] findSickEmployeesFrom2004() throws java.rmi.RemoteException{
+  public java.lang.String[][] findSickEmployeesFrom2004() throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
     return webService1Soap.findSickEmployeesFrom2004();
   }
   
-  public java.lang.Object[][] findMostAbsentEmployee() throws java.rmi.RemoteException{
+  public java.lang.String findMostAbsentEmployee() throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
     return webService1Soap.findMostAbsentEmployee();
   }
   
-  public java.lang.Object[][] getAllTables() throws java.rmi.RemoteException{
+  public java.lang.String[][] getAllTables() throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
     return webService1Soap.getAllTables();
   }
   
-  public java.lang.Object[][] getAllKeys() throws java.rmi.RemoteException{
+  public java.lang.String[][] getAllKeys() throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
     return webService1Soap.getAllKeys();
   }
   
-  public java.lang.Object[][] getAllIndexes() throws java.rmi.RemoteException{
+  public java.lang.String[][] getAllIndexes() throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
     return webService1Soap.getAllIndexes();
   }
   
-  public java.lang.Object[][] getAllConstraints() throws java.rmi.RemoteException{
+  public java.lang.String[][] getAllConstraints() throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
     return webService1Soap.getAllConstraints();
   }
   
-  public java.lang.Object[][] getAllEmployeeColumns() throws java.rmi.RemoteException{
+  public java.lang.String[][] getAllEmployeeColumns() throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
     return webService1Soap.getAllEmployeeColumns();
+  }
+  
+  public java.lang.String[] getNamesOfEmployeeTables() throws java.rmi.RemoteException{
+    if (webService1Soap == null)
+      _initWebService1SoapProxy();
+    return webService1Soap.getNamesOfEmployeeTables();
   }
   
   
