@@ -2,7 +2,7 @@ package applicationClient;
 
 import java.awt.EventQueue;
 
-import GUIApplication.Controller;
+
 
 public class Application {
 	/**
