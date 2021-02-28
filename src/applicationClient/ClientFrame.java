@@ -18,6 +18,11 @@ public class ClientFrame extends JFrame {
 
 	private JPanel contentPane;
 	private JTable tableMetadata;
+	private JLabel lblAbsentEmployee;
+	public JLabel getLblAbsentEmployee() {
+		return lblAbsentEmployee;
+	}
+
 	public JPanel getContentPane() {
 		return contentPane;
 	}
@@ -121,6 +126,10 @@ public class ClientFrame extends JFrame {
 		
 		tableSickness = new JTable();
 		scrollPane_2.setViewportView(tableSickness);
+		
+		lblAbsentEmployee = new JLabel("The first name of the employee who has been absent the most: ");
+		lblAbsentEmployee.setBounds(10, 7, 524, 14);
+		panel_2.add(lblAbsentEmployee);
 		
 		JPanel panel_1_1 = new JPanel();
 		tabbedPane.addTab("All Tables", null, panel_1_1, null);

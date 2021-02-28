@@ -53,6 +53,8 @@ public class Controller {
 			addListenerForComboBox ();
 			//Fill the Jtable tableContents with the default selected table name.
 			fillTableContents();
+			
+			updateMostAbsentEmployee();
 
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
@@ -106,6 +108,14 @@ public class Controller {
 
 		DefaultTableModel tableModel = new DefaultTableModel(data, columnNames);
 		table.setModel(tableModel);
+	}
+	public void updateMostAbsentEmployee() {
+		try {
+			client.getLblAbsentEmployee().setText("The first name of the employee who has been absent the most: " + proxy.findMostAbsentEmployee());
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
