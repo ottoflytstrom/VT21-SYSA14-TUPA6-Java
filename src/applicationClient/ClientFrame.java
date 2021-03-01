@@ -1,24 +1,24 @@
 package applicationClient;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JTabbedPane;
-import javax.swing.JLabel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
 import javax.swing.JComboBox;
-import java.awt.event.ItemListener;
-import java.awt.event.ItemEvent;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+import javax.swing.JTable;
+import javax.swing.border.EmptyBorder;
 
 public class ClientFrame extends JFrame {
 
 	private JPanel contentPane;
 	private JTable tableMetadata;
 	private JLabel lblAbsentEmployee;
+	private JLabel lblFeedback;
+	public JLabel getLblFeedback() {
+		return lblFeedback;
+	}
+
 	public JLabel getLblAbsentEmployee() {
 		return lblAbsentEmployee;
 	}
@@ -84,7 +84,7 @@ public class ClientFrame extends JFrame {
 	 */
 	public ClientFrame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 580, 300);
+		setBounds(100, 100, 580, 326);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -199,5 +199,9 @@ public class ClientFrame extends JFrame {
 		
 		tableIndexes = new JTable();
 		scrollPane_4_1_1.setViewportView(tableIndexes);
+		
+		lblFeedback = new JLabel("");
+		lblFeedback.setBounds(5, 262, 549, 14);
+		contentPane.add(lblFeedback);
 	}
 }

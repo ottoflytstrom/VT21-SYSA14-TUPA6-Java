@@ -2,6 +2,7 @@ package applicationClient;
 
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.net.ConnectException;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -57,8 +58,7 @@ public class Controller {
 			updateMostAbsentEmployee();
 
 		} catch (RemoteException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			client.getLblFeedback().setText("Please check your connection and try again.");
 		}
 
 
@@ -79,8 +79,7 @@ public class Controller {
 			dataAndColumnNames = proxy.getContentFromTable(tableName);
 			fillTable(dataAndColumnNames, client.getTableContents());
 		} catch (RemoteException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			client.getLblFeedback().setText("Please check your connection and try again.");
 		}
 	}
 	
@@ -90,8 +89,7 @@ public class Controller {
 			model = new DefaultComboBoxModel<String>(proxy.getNamesOfEmployeeTables());
 			client.getComboBoxTableName().setModel(model);
 		} catch (RemoteException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			client.getLblFeedback().setText("Please check your connection and try again.");
 		}
 	}
 
@@ -113,8 +111,7 @@ public class Controller {
 		try {
 			client.getLblAbsentEmployee().setText("The first name of the employee who has been absent the most: " + proxy.findMostAbsentEmployee());
 		} catch (RemoteException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			client.getLblFeedback().setText("Please check your connection and try again.");
 		}
 	}
 
